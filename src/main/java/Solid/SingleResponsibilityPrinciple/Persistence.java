@@ -1,4 +1,4 @@
-package Solid.Srp;
+package Solid.SingleResponsibilityPrinciple;
 
 import java.io.File;
 import java.io.FileNotFoundException;

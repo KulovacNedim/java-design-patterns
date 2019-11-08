@@ -1,15 +1,15 @@
-package Solid.Srp;
+package Solid.SingleResponsibilityPrinciple;
 
 import java.io.IOException;
 
 public class Demo {
     public static void main(String[] args) throws IOException {
-        Jurnal jurnal = new Jurnal();
+        Solid.SingleResponsibilityPrinciple.Jurnal jurnal = new Solid.SingleResponsibilityPrinciple.Jurnal();
         jurnal.addEntry("I smiled today");
         jurnal.addEntry("I ate a bug :)");
         System.out.println(jurnal);
 
-        Persistence persistence = new Persistence();
+        Solid.SingleResponsibilityPrinciple.Persistence persistence = new Solid.SingleResponsibilityPrinciple.Persistence();
         String filename = "journal.txt";
         persistence.saveToFile(jurnal, filename, true);
         Runtime.getRuntime().exec("notepad.exe " + filename);
